@@ -1,0 +1,51 @@
+<!-- <head>
+  <title>ResponsiveArtist</title>
+</head>
+
+<body>
+
+</body> -->
+
+  <template name="MainLandingPage">
+    <!-- <form class="iheart-search">
+      <input type="text" name="search" class="search" placeholder="Search for an artist here..">
+    </form> -->
+    <div class="landing">
+
+        {{#each artists}}
+
+        <div class="content">
+           <img src="{{imageurl}}">
+          <div class="label">
+            <p>
+              {{name}}<br>{{description}}
+            </p>
+          </div>
+        </div>
+        {{/each}}
+
+
+      </div>
+
+
+
+      {{> search}}
+
+
+
+
+
+  </template>
+
+
+
+
+<!-- <template name="info">
+  <h2>Learn Meteor!</h2>
+  <ul>
+    <li><a href="https://www.meteor.com/try" target="_blank">Do the Tutorial</a></li>
+    <li><a href="http://guide.meteor.com" target="_blank">Follow the Guide</a></li>
+    <li><a href="https://docs.meteor.com" target="_blank">Read the Docs</a></li>
+    <li><a href="https://forums.meteor.com" target="_blank">Discussions</a></li>
+  </ul>
+</template> -->
